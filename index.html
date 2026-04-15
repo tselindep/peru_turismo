@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre Perú: paisajes, gastronomía e historia del corazón de Sudamérica.">
+    <title>Descubre Perú - Turismo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Descubre Perú</h1>
+        <p class="frase-header">Tierra de paisajes, gastronomía e historia milenaria.</p>
+        <img src="imagenes/machupichu1.jpg" alt="Vista aérea de Machu Picchu" class="hero-img">
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <nav>
+        <h2>Menú Principal</h2>
+        <ul>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#gastronomia">Gastronomía</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#audio">Audio</a></li>
+	    <li><a href="#video">Video</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <!-- DESTINOS -->
+
+        <section id="destinos">
+            <h2>📍 Destinos Imperdibles</h2>
+            <h3>Machu Picchu</h3>
+            <p>La ciudadela inca más famosa del mundo. Está a 2.430 metros sobre el nivel del mar.</p>
+            <h3>Lago Titicaca</h3>
+            <p>El lago navegable más alto del mundo, a 3.812 metros de altitud.</p>
+	    <h3>Amazonia</h3>
+            <p>Más del 60% del territorio peruano es selva amazónica. Una de las zonas con mayor biodiversidad del planeta.
+            </p>
+
+        </section>
+
+
+<section class="zona-columnas">
+            <div class="columna">
+                <img src="imagenes/machupichu2.jpg" alt="Cultura">
+                <h3>Cultura Inca</h3>
+                <p>Patrimonio de la humanidad y orgullo peruano.</p>
+            </div>
+            <div class="columna">
+                <img src="imagenes/lagotiticaca.jpg" alt="Sabor">
+                <h3>Lago Titicaca</h3>
+                <p>El lago navegable más alto del mundo.</p>
+            </div>
+            <div class="columna">
+                <img src="imagenes/amazonia_peruana.jpg" alt="Naturaleza">
+                <h3>Amazonía</h3>
+                <p>Una de las mayores reservas de biodiversidad del planeta.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN GASTRONOMÍA -->
+
+        <section id="gastronomia">
+            <h2>🍽️ Gastronomía</h2>
+            <p>La cocina peruana es una de las más variadas del mundo.</p>
+            <ul>
+                <li><strong>Ceviche:</strong> Pescado fresco marinado en limón con ají y cebolla roja. El plato nacional.</li>
+                <li><strong>Lomo Saltado:</strong> Carne salteada con papas y ají amarillo. Fusión chino-peruana.</li>
+		<li><strong>Ají de Gallina</strong> - Pollo en crema de pan y ají amarillo, servido con arroz blanco.</li>
+                <li><strong>Papa a la Huancaína</strong> - Papas bañadas en salsa cremosa de queso y ají amarillo.</li>
+                <li><strong>Pisco Sour</strong> - El cóctel peruano por excelencia.</li>
+            </ul>
+        </section>
+
+	<!-- SECCIÓN HISTORIA -->
+
+        <section id="historia">
+            <h2>🏛️ Historia</h2>
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>Época</th>
+                        <th>Hito</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pre-Inca</td>
+                        <td>Cultura Chavín, Nazca y Moche.</td>
+                    </tr>
+                    <tr>
+                        <td>Incaica</td>
+                        <td>Expansión del Tahuantinsuyo.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+	<!-- SECCIÓN MULTIMEDIA -->
+
+        <section id="audio">
+            <h2>🎵 Audio</h2>
+            <p>Escucha "El Cóndor Pasa":</p>
+            <audio controls>
+                <source src="audio/El_Condor_Pasa.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </section>
+
+	<section id="video">
+	<h2>🎥 Video</h2>
+	<p>Video sobre Perú</p>
+	<video width="600" height="380" controls
+                   aria-label="Video promocional turístico de Perú con paisajes y cultura">
+                <source src="videos/travel_to_peru.mp4" type="video/mp4">
+                <p>Tu navegador no soporta video HTML5.
+                   <a href="videos/travel_to_peru.mp4" download>Descargar el video</a>.
+                </p>
+            </video>
+	</section>
+
+	<!-- SECCIÓN CONTACTO -->
+
+        <section id="contacto">
+            <h2>✉️ Contacto</h2>
+            <form id="formularioContacto">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <p><label for="nombre">Nombre:</label> 
+                       <input type="text" id="nombre" name="nombre" required></p>
+                    <p><label for="correo">Email:</label>
+                       <input type="email" name="correo" required></p>
+                    <p><label for="mensaje">Mensaje:</label><br>
+                       <textarea id="mensaje" name="mensaje" rows="4"></textarea></p>
+                </fieldset>
+                <button type="submit">Enviar consulta</button>
+            </form>
+	    
+	    <div id="mensajeExito"></div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Descubre Perú &copy; 2026</h3>
+        <p>Página creada por Tselin Echegaray como actividad final del curso de Programación Web.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
