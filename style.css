@@ -1,0 +1,174 @@
+/* Dos familias de fuentes */
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #8B0000;     
+    text-align: center;
+}
+
+p, li, td, th, label, input, textarea {
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Colores y fondos */
+body {
+    background-color: #FFFAF0; /* Fondo general */
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 5px solid #D2691E; /* Bordes */
+    text-align: center;
+}
+
+/* Frase en negrita y centrada */
+.frase-header {
+    text-align: center;
+    font-weight: bold;
+    color: #5C3317;
+}
+
+/* Imagen que no sobrepasa pantalla */
+.hero-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Margin y Padding */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Zona de 3 columnas */
+.zona-columnas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.columna {
+    flex: 1 1 calc(30% - 20px);
+    min-width: 250px; /* Para evitar que sean demasiado estrechas */
+    border: 1px solid #D2691E;
+    padding: 15px;
+    text-align: center;
+    background-color: #FFF8F0;
+}
+
+.columna img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilos del Menú */
+nav {
+    background-color: #D2691E;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para tabla */
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.tabla-datos th, .tabla-datos td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Añadir style.css */
+#mensajeExito {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Oculto hasta que se envíe el formulario */
+    font-family: 'Verdana', sans-serif;
+    text-align: center;
+}
+
+/* Esta es la clase que el JS activará al hacer clic */
+.exito-estilo {
+    background-color: #d4edda; /* Verde clarito */
+    color: #155724;            /* Verde oscuro */
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid #c3e6cb;
+    border-radius: 8px;
+    display: block !important;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* --- AJUSTE PARA MÓVILES --- */
+
+@media (max-width: 768px) {
+    /* El menú deja de estar de lado y se pone uno sobre otro */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Las columnas ahora ocupan el 100% del ancho del móvil */
+    .columna {
+        flex: 1 1 100%;
+    }
+
+    /* El video se ajusta para no salirse de la pantalla */
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mejorar el espacio en el formulario */
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block; /* Pone el nombre del campo arriba del cuadro de texto */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
